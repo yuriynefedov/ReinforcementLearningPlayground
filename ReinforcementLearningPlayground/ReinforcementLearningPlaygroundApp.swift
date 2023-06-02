@@ -13,5 +13,6 @@ struct ReinforcementLearningPlaygroundApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowResizability(.contentSize)
     }
 }

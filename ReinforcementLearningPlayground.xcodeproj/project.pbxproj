@@ -11,6 +11,11 @@
 		BE9391A92A28CB8000075B13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9391A82A28CB8000075B13 /* ContentView.swift */; };
 		BE9391AB2A28CB8200075B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9391AA2A28CB8200075B13 /* Assets.xcassets */; };
 		BE9391AE2A28CB8200075B13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9391AD2A28CB8200075B13 /* Preview Assets.xcassets */; };
+		BE9391B62A28CB9000075B13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9391B52A28CB9000075B13 /* Constants.swift */; };
+		BE9391B82A28CDA800075B13 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9391B72A28CDA800075B13 /* GameViewModel.swift */; };
+		BE9391BA2A28D8DD00075B13 /* QLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9391B92A28D8DD00075B13 /* QLearning.swift */; };
+		BE9391BC2A28D8F600075B13 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9391BB2A28D8F600075B13 /* Move.swift */; };
+		BE9391BE2A29AD7700075B13 /* IntegerVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9391BD2A29AD7700075B13 /* IntegerVector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		BE9391AA2A28CB8200075B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9391AD2A28CB8200075B13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE9391AF2A28CB8200075B13 /* ReinforcementLearningPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReinforcementLearningPlayground.entitlements; sourceTree = "<group>"; };
+		BE9391B52A28CB9000075B13 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE9391B72A28CDA800075B13 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		BE9391B92A28D8DD00075B13 /* QLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLearning.swift; sourceTree = "<group>"; };
+		BE9391BB2A28D8F600075B13 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		BE9391BD2A29AD7700075B13 /* IntegerVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerVector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				BE9391A62A28CB8000075B13 /* ReinforcementLearningPlaygroundApp.swift */,
 				BE9391A82A28CB8000075B13 /* ContentView.swift */,
+				BE9391B72A28CDA800075B13 /* GameViewModel.swift */,
+				BE9391B52A28CB9000075B13 /* Constants.swift */,
+				BE9391BD2A29AD7700075B13 /* IntegerVector.swift */,
+				BE9391B92A28D8DD00075B13 /* QLearning.swift */,
+				BE9391BB2A28D8F600075B13 /* Move.swift */,
 				BE9391AA2A28CB8200075B13 /* Assets.xcassets */,
 				BE9391AF2A28CB8200075B13 /* ReinforcementLearningPlayground.entitlements */,
 				BE9391AC2A28CB8200075B13 /* Preview Content */,
@@ -139,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9391BA2A28D8DD00075B13 /* QLearning.swift in Sources */,
+				BE9391B82A28CDA800075B13 /* GameViewModel.swift in Sources */,
 				BE9391A92A28CB8000075B13 /* ContentView.swift in Sources */,
 				BE9391A72A28CB8000075B13 /* ReinforcementLearningPlaygroundApp.swift in Sources */,
+				BE9391BC2A28D8F600075B13 /* Move.swift in Sources */,
+				BE9391BE2A29AD7700075B13 /* IntegerVector.swift in Sources */,
+				BE9391B62A28CB9000075B13 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
