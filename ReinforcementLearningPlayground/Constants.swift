@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 struct Constants {
-    static let gridSize: IntegerVector = .init(x: 100, y: 100)
-    static let pixelSize: CGFloat = 3
+    static let gridSize: IntegerVector = .init(x: 20, y: 20)
+    static let pixelSize: CGFloat = 10
     static let playerColor: Color = .red
     static let foodColor: Color = .green
     static let backgroundColor: Color = .blue

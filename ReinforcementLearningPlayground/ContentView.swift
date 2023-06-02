@@ -14,31 +14,36 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            VStack(alignment: .leading, spacing: 0) {
-                ForEach(0..<Constants.gridSize.y, id: \.self) { y in
-                    HStack(alignment: .center, spacing: 0) {
-                        ForEach(0..<Constants.gridSize.x, id: \.self) { x in
-                            pixel(at: .init(x: x, y: y))
-                        }
-                    }
-                }
-            }
+            Constants.backgroundColor
+            foodPixel
+            playerPixel
         }
+        .frame(
+            width: Constants.pixelSize * CGFloat(Constants.gridSize.x),
+            height: Constants.pixelSize * CGFloat(Constants.gridSize.y)
+        )
     }
     
-    @ViewBuilder func pixel(at vector: IntegerVector) -> some View {
-        let color: Color = {
-            if viewModel.playerPosition == vector {
-                return Constants.playerColor
-            } else if viewModel.foodPosition == vector {
-                return Constants.foodColor
-            } else {
-                return Constants.backgroundColor
-            }
-        }()
+    @ViewBuilder var foodPixel: some View {
+        let color: Color = Constants.foodColor
         Rectangle()
             .frame(width: Constants.pixelSize, height: Constants.pixelSize)
             .foregroundColor(color)
+            .position(
+                x: CGFloat(viewModel.foodPosition.x) * Constants.pixelSize + Constants.pixelSize/2,
+                y: CGFloat(viewModel.foodPosition.y) * Constants.pixelSize + Constants.pixelSize/2
+            )
+    }
+    
+    @ViewBuilder var playerPixel: some View {
+        let color: Color = Constants.playerColor
+        Rectangle()
+            .frame(width: Constants.pixelSize, height: Constants.pixelSize)
+            .foregroundColor(color)
+            .position(
+                x: CGFloat(viewModel.playerPosition.x) * Constants.pixelSize + Constants.pixelSize/2,
+                y: CGFloat(viewModel.playerPosition.y) * Constants.pixelSize + Constants.pixelSize/2
+            )
     }
 }
 
